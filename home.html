@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Security</title>
+    <style>
+
+        section.hero {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            height: 530px;
+        }
+
+        .hero-left {
+            background-image:url("images/global7.jpeg");
+            background-attachment:fixed;
+            background-size:270px 600px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-right {
+            background: url('images/webban2.png') no-repeat right;
+            background-size: contain;
+            background-attachment:fixed;
+            
+            background-color: white;
+            
+        }
+
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+        }
+
+        .button {
+            background-color: white;
+            opacity: 0.7;
+            border-radius: 4px;
+            color: black;
+            padding: 15px 32px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid black;
+            transition: opacity 0.3s, background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #07ada6;
+            color: white;
+            opacity: 1;
+        }
+
+        .key-highlights {
+    padding: 20px;
+    background: white;
+    text-align: center;
+    
+}
+
+#download-app h2 {
+    color: #07ada6;
+    font-size: 28px;
+}
+
+#download-app ul {
+    margin: 10px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.hero-right button{
+    position: absolute;bottom: 15px; right: 20px;
+    padding:5px;
+    cursor:pointer;
+   
+    border:3px solid #07ada6;
+   
+}
+.hero-right button:hover{
+    color:white;
+    background-color:#07ada6;
+    border:3px solid white;
+}
+
+
+        .arrowlink:hover img {
+            border: 4px solid #07ada6;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Women's Security</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="whatwedo.html">You Should Know</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" class="login">Log in</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-left">
+            <marquee direction="up" scrollamount="3">
+                <p style="text-align:center; color:black;">Our project, in collaboration with the UN Women organization, aims to enhance women's security and safety through awareness, legal protections, and supportive technologies.</p>
+            </marquee><br><br><br>
+            <a href="https://www.unwomen.org/en/what-we-do/ending-violence-against-women/creating-safe-public-spaces" target="_blank" class="button" title="United Nations Women">UN women</a>
+            
+        </div>
+            
+        <div class="hero-right">
+            <a href="#download-app"><button >Download the app</button></a>
+        </div>
+    </section>
+
+    <section>
+        <div style="width:100%; background-color:black; height:55px; display: flex; justify-content: center;">
+            <br>
+            <a href="#key-highlights" class="arrowlink" title="go to key highlights="_self">
+                <img src="images/downarrow.jpeg" width="48px" height="48 px">
+            </a>
+        </div>
+    </section>
+
+    <section id="key-highlights" class="key-highlights">
+        <h2 style="margin-top:0px;">Key Highlights</h2>
+        <div class="highlights">
+            <div class="highlight-item polaroid">
+                <div class="overlay">
+                    <p class="over">
+                        We empower women with practical safety tips to enhance personal security. Stay alert in unfamiliar areas, avoid isolated spots, and keep your phone charged with emergency contacts ready. Use well-lit routes, share your location with trusted contacts, and leverage safety apps for added protection. Trust your instincts, and don’t hesitate to remove yourself from uncomfortable situations. Simple tools like pepper spray or personal alarms can provide an extra layer of defense in emergencies.</p>
+                </div>
+                <img src="images/safe.jpeg" alt="Safety Tips">
+                <div class="caption">Safety Tips</div>
+            </div>
+    
+            <div class="highlight-item polaroid">
+                <div class="overlay">
+                    <p class="over">
+                        Our SOS resources are designed for immediate assistance during emergencies. With features like one-touch alerts, GPS tracking, and direct communication with trusted contacts or emergency services, we ensure rapid response. From mobile apps to wearable devices, our solutions empower women to feel safer and more secure in any situation.</p>
+                </div>
+                <img src="images/safety.jpeg" alt="SOS Resources">
+                <div class="caption">SOS Resources</div>
+            </div>
+    
+            <div class="highlight-item polaroid">
+                <div class="overlay">
+                    <p class="over">
+                        We educate women on their legal rights and security laws to ensure safety, equality, and justice. Our resources cover protections against harassment, violence, and discrimination, while promoting awareness of avenues for legal aid and support. Empowering women with this knowledge fosters confidence and creates a safer, more inclusive environment.</p>
+                </div>
+                <img src="images/Law.jpeg" alt="Laws and Rights">
+                <div class="caption">Laws and Rights</div>
+            </div>
+        </div>
+    </section>
+    <hr><br>
+    <br><br>
+    <section id="download-app" style="background-image: url('images/banner im 1.jpg'); padding: 40px; text-align: center;">
+        <h2 style="margin-top: 0;">Download "Safe She" App</h2>
+        <p>Stay safe with "Safe She," our dedicated women's security app. Download now for peace of mind and enhanced safety features.</p>
+    
+        <div style="margin: 20px 0;">
+            <a href="https://play.google.com/safe-she" target="_blank" style="margin-right: 10px;">
+                Download from google play
+            </a>
+            <a href="https://apps.apple.com/safe-she" target="_blank">
+               Download from app store
+            </a>
+        </div>
+    
+        <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+            <h3>How to Install:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>Click the download link above for your device.</li>
+                <li>Follow the instructions to install the app.</li>
+                <li>Open the app and grant necessary permissions.</li>
+                <li>Set up your profile and emergency contacts.</li>
+            </ul>
+    
+            <h3>Core Features:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>One-touch SOS alert for emergencies.</li>
+                <li>Real-time GPS tracking and geofencing.</li>
+                <li>Offline navigation to safe locations.</li>
+                <li>Access to local legal resources and helplines.</li>
+                <li>Emergency tips and safety guides.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Women's Security and Safety System | All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>

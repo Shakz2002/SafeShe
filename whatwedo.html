@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do - Women's Security</title>
+    <style>
+        
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 10px 20px 20px 20px;
+            background-color: white;
+            width:100%;
+            margin-top: 80px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+            
+        }
+
+        .feature-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 1px;
+            width: 400px;
+            margin: 10px;
+            height:400px;
+            border-radius: 10px;
+            box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+
+        }
+
+        .feature img {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+        }
+        .over {
+            text-align:center;
+            margin-top:90px;
+        }
+        #safe,#sos,#law h3,ul{
+            text-align:left;
+        }
+        .content-wrapper {
+        overflow: auto; /* Ensures content flows properly around the floated image */
+    }
+
+    .content-wrapper img {
+        float: right;
+        margin: 25px 25px 10px 10px; /* Adds spacing around the image */
+        width: 280px; /* Adjust to fit your layout */
+        height: 450px;
+        border-radius:8px;
+    }
+    /* Styles for Popup */
+
+
+ /* Popup Container */
+ .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.feature img {
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 10px solid white; /* Creates the white border of a Polaroid */
+    margin-bottom: 10px; /* Adds spacing below the image */
+}
+.feature {
+    background: white;
+    padding: 10px;
+    width: 380px;
+    margin: 10px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.feature h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+  
+       
+    </style>
+</head>
+<body style="background-image:url('images/banner im 1.jpg'); background-attachment:fixed; background-size:cover;">
+    
+    <div class="language-selector">
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="si">සිංහල</option>
+            <option value="ta">தமிழ்</option>
+        </select>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>Women's Security</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="whatwedo.html">You Should Know</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" class="login">Log in</a>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+     <div class="main-content">
+    <div class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#safe" class="side">Safety Tips</a></li>
+            <li><a href="#sos" class="side">SOS Resources</a></li>
+            <li><a href="#law" class="side">Security Laws and Rights</a></li>
+           
+        </ul>
+    </div>
+
+    <div class="container">
+        <section class="intro" style="border-left:0px;">
+            <h2>Do You Know, Women?</h2>
+            <p>Women should be aware of safety tips, SOS alerts, and security rights and laws to empower themselves with the knowledge and tools to protect their well-being in any situation. Safety tips help women stay vigilant and prepared, reducing the risk of harm in public or private spaces. SOS alerts and related technologies provide quick access to help during emergencies, offering a sense of security and faster responses. Understanding rights and laws ensures women can assert their legal protections, report injustices, and seek justice without fear. Together, this knowledge fosters confidence, independence, and resilience in navigating a safer life.</p>
+        </section>
+
+        <section class="feature-section">
+            
+            <div class="feature highlight-item polaroid">
+                <a href="javascript:void(0)" onclick="openVideoPopup('safe')">
+                <div class="overlay">
+                    <p class="over">
+                        Click here to watch the video</p>
+                </div>
+            </a>
+                    <img src="images/safe.jpeg" alt="Safety Tips">
+                
+                <h3>Safety Tips</h3>
+                <p>Women should know safety tips to stay alert, reduce risks, and enhance self-confidence. Being informed about personal safety empowers women to protect themselves, make safer decisions, and navigate challenging situations.</p>
+            </div>
+            
+            <div class="feature highlight-item polaroid">
+                <a href="javascript:void(0)" onclick="openVideoPopup('sos')">
+                <div class="overlay">
+                    <p class="over">
+                        Click here to watch the video</p>
+                </div>
+            </a>
+                    <img src="images/safety.jpeg" alt="SOS Resources" >
+                
+                <h3>SOS Resources</h3>
+                <p>Women should know about SOS resources to quickly access help in emergencies. These resources provide immediate support, ensuring safety through alerts, communication, and real-time assistance, empowering women to act swiftly in危 situations.</p>
+            </div>
+            
+            <div class="feature highlight-item polaroid">
+                <a href="javascript:void(0)" onclick="openVideoPopup('law')" >
+                <div class="overlay">
+                    <p class="over">
+                        Click here to watch the video</p>
+                </div>
+            </a>
+                    <img src="images/Law.jpeg" alt="Security Laws">
+                
+                <h3>Security Laws & Rights</h3>
+                <p>Women should know about security laws and rights to protect themselves from harassment, violence, and discrimination. Understanding legal protections empowers women to assert their rights, seek justice, and ensure safety.</p>
+            </div>
+            
+            
+            
+        </section>
+        
+        <section id="safe" class="intro" >
+            <h2>Safety Tips</h2>
+            <div class="content-wrapper">
+            <img src="images/safefloat.jpeg" style="margin-top:55px;">
+            
+            <h3>Personal Safety</h3>
+            <ul>
+                <li>Stay alert and avoid distructions in unfamilliar areas</li>
+                <li>Share your location with trusted contacts when traveling.</li>
+                <li>Avoid sharing personal information with strangers or on social media.</li>
+            </ul>
+            <h3>Public Spaces</h3>
+            <ul>
+                <li>Stick to well-it, populated areas, especially at night.</li>
+                <li>Use safety apps to inform loved ones about your location.</li>
+                <li>Avoid unverified taxis or rideshares and verify the driver and car details before entering.</li>
+            </ul>
+            <h3>Digital Security</h3>
+            <ul>
+                <li>Use strong, unique passwords for online accounts.</li>
+                <li>Be cautious of sharing sensitive information online.</li>
+                <li>Report online harassment and block abusers.</li>
+            </ul>
+            <h3>Home Security</h3>
+            <ul>
+                <li>Install sturdy locks, peepholes, and alarm systems.</li>
+                <li>Avoid letting strangers inside without verifying their identity.</li>
+                <li>Keep emergency numbers visible and accessible.</li>
+            </ul>
+            <h3> Self-Defense Preparedness</h3>
+            <ul>
+                <li>Attend self-defense workshops.</li>
+                <li>Carry non-lethal tools like pepper spray or personal alarms.</li>
+                <li>Focus on creating distance, making noise, and escaping unsafe situations.</li>
+            </ul>
+            </div>
+        </section>
+
+        <section id="sos" class="intro">
+            <h2>SOS Resources</h2>
+            <div class="content-wrapper">
+            <img src="images/sosfloat.jpeg">
+            <h3>Emergency Contact Systems</h3>
+            <ul>
+                <li>Provide helplines for women in distress (e.g., police, women’s helplines, mental health support).</li>
+                <li>Create dedicated 24/7 emergency response teams.</li>
+            </ul>
+            <h3> Safety Applications</h3>
+            <ul>
+                <li>Promote apps like SecurePath, which include:
+                    <ul>
+                        <li>SOS alerts with live location sharing.</li>
+                        <li>Offline navigation tools for remote areas.</li>
+                        <li>Geofencing for real-time alerts when entering or leaving safe zones.</li>
+                        <li>Anonymous reporting for harassment or unsafe situations.</li>
+                    </ul>
+                </li>
+                
+            </ul>
+            <h3>Community Safety Networks</h3>
+            <ul>
+                <li>Establish local women’s safety groups where members can check in on each other.</li>
+                <li>Introduce a buddy system for travel or late-night shifts.</li>
+            </ul>
+            <h3>Wearable Safety Devices</h3>
+            <ul>
+                <li>Distribute devices like safety pendants, GPS-enabled watches, or bracelets with built-in panic buttons.
+                </li>
+            </ul>
+            <div>
+        </section>
+
+        <section id="law" class="intro">
+            <h2>Security Laws and Rights</h2>
+            <div class="content-wrapper">
+            <img src="images/lawfloat.jpeg">
+            <h3> Rights Awareness</h3>
+            <ul>
+                <li>Educate women about their legal rights, such as
+                    <ul>
+                        <li>Right to protection against harassment under workplace laws.</li>
+                        <li>Right to protection against domestic violence.</li>
+                        <li>Right to file complaints against harassment or abuse anonymously.</li>
+                        <li>Right to self-defense under criminal law provisions.</li>
+                
+                    </ul>
+                </li>
+                
+            </ul>
+            <h3>Key Laws to Promote</h3>
+            <ul>
+                <li>Sexual Harassment of Women at Workplace (Prevention, Prohibition, and Redressal) Act:</li>
+                <li>Domestic Violence Act:</li>
+                <li>Anti-Stalking Laws:</li>
+                <li>Cybercrime Laws:</li>
+                <li>Sexual Assault Laws:</li>
+            </ul>
+            <h3>Global Rights Initiatives</h3>
+            <ul>
+                <li>Support campaigns like UN Women’s HeForShe and Safe Cities initiatives.</li>
+                <li>Collaborate with international organizations to align local policies with global best practices.</li>
+            </ul>
+            <h3> Reporting Mechanisms</h3>
+            <ul>
+                <li>Simplify processes for reporting abuse or unsafe conditions, including
+                    <ul>
+                        <li>Online portals for complaints.
+                        </li>
+                        <li>Toll-free helplines available in multiple languages</li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </section>
+        
+        
+    </div>    
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Women's Security and Safety System | All Rights Reserved</p>
+    </footer>
+  
+    <script>
+   function openVideoPopup(featureId) {
+    const videoElement = document.querySelector('#videoPopup video');
+    const popupTitle = document.getElementById('popupTitle');
+    
+    // Set the video source and title based on the clicked feature
+    if (featureId === 'safe') {
+        popupTitle.textContent = "Safety Tips - Video";
+        videoElement.src = "videos/safevideo.mp4";
+    } else if (featureId === 'sos') {
+        popupTitle.textContent = "SOS Resources - Video";
+        videoElement.src = "videos/sos.mp4";
+    } else if (featureId === 'law') {
+        popupTitle.textContent = "Security Laws & Rights - Video";
+        videoElement.src = "videos/law.mp4";
+    }
+    
+    // Show the popup and play the video
+    document.getElementById('videoPopup').style.display = "flex";
+    videoElement.load(); // Ensures the correct video is loaded
+    videoElement.play(); // Start the video automatically
+}
+
+// Close the video popup
+function closeVideoPopup() {
+    const videoElement = document.querySelector('#videoPopup video');
+    document.getElementById('videoPopup').style.display = "none";
+    videoElement.pause(); // Pause the video when the popup is closed
+    videoElement.src = ""; // Clear the source to reset the video
+}
+
+
+    </script>
+
+<div id="videoPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeVideoPopup()">&times;</span>
+        <h2 id="popupTitle"></h2>
+        <video controls>
+            <source id="videoSource" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+</body>
+</html>
